@@ -1,0 +1,29 @@
+name: pbp_project_flutter
+description: PBP Flutter Project Application
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  intl: ^0.18.0
+  sqflite: ^2.2.0
+  path_provider: ^2.0.11
+  http: ^0.13.5
+  provider: ^6.0.5
+  pbp_django_auth: ^0.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true

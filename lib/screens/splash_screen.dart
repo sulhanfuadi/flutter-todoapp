@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pbp_project_flutter_speedrun/screens/home_screen.dart';
+import 'package:pbp_project_flutter/screens/home_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -27,15 +27,15 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       backgroundColor: Colors.blue,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Icon(Icons.apps, size: 100, color: Colors.white),
-            const SizedBox(height: 20),
-            const Text(
+            Icon(Icons.apps, size: 100, color: Colors.white),
+            SizedBox(height: 20),
+            Text(
               'PBP Project',
               style: TextStyle(
                 fontSize: 32,

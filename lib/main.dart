@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pbp_project_flutter_speedrun/screens/splash_screen.dart';
+import 'package:pbp_project_flutter/screens/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());

@@ -16,7 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   _navigateToHome() async {
-    await Future.delayed(const Duration(seconds: 2));
+    await Future.delayed(const Duration(seconds: 3));
     if (mounted) {
       Navigator.pushReplacement(
         context,
@@ -28,20 +28,25 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue,
+      backgroundColor: Colors.red,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Icon(Icons.apps, size: 100, color: Colors.white),
+            Icon(Icons.task_alt, size: 100, color: Colors.white),
             const SizedBox(height: 20),
             const Text(
-              'PBP Project',
+              'Task Manager',
               style: TextStyle(
                 fontSize: 32,
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
               ),
+            ),
+            const SizedBox(height: 10),
+            const Text(
+              'Manage Your Daily Tasks',
+              style: TextStyle(fontSize: 16, color: Colors.white70),
             ),
           ],
         ),
